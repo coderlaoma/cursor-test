@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的静态网站</title>
+    <style>
+        /* 这里可以添加一些基本的 CSS 样式 */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="page1.html">菜单1</a></li>
+                <li><a href="page2.html">菜单2</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>欢迎来到我的网站</h1>
+        <p>这是首页的内容。</p>
+
+        <form>
+            <label for="date">选择年月 (从1965年1月开始):</label>
+            <input type="month" id="date" name="date" min="1965-01" required>
+
+            <label for="number">输入0到100的数字:</label>
+            <input type="number" id="number" name="number" min="0" max="100" required>
+
+            <label for="profit">收益:</label>
+            <input type="number" id="profit" name="profit" step="0.01" required>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 我的静态网站。保留所有权利。</p>
+    </footer>
+</body>
+</html>
